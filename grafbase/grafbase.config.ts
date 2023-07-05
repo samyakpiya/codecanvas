@@ -8,7 +8,7 @@ const User = g
     avatarUrl: g.url(),
     description: g.string().optional(),
     githubUrl: g.url().optional(),
-    linkedinUrl: g.url().optional(),
+    linkedInUrl: g.url().optional(),
     projects: g
       .relation(() => Project)
       .list()
@@ -30,7 +30,8 @@ const Project = g
     createdBy: g.relation(() => User),
   })
   .auth((rules) => {
-    rules.public().read(), rules.private().create().delete().update();
+    rules.public().read();
+    rules.private().create().delete().update();
   });
 
 const jwt = auth.JWT({
