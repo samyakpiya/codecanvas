@@ -25,7 +25,7 @@ const Footer = () => {
     <footer className="flexStart footer">
       <div className="flex flex-col gap-12 w-full">
         <div className="flex items-start flex-col">
-          <Image src="/logo.svg" width={180} height={1} alt="Codecanvas" />
+          <Image src="/logo.svg" width={180} height={30} alt="Codecanvas" />
 
           <p className="text-start text-sm font-normal mt-5 max-w-xs">
             Codecanvas is the world's leading community for developers to share,
